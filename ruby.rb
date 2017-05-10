@@ -11,16 +11,27 @@ def make_change(num)
 
 	amount = num
 	quaters = amount/25
-	puts quaters 
+	# puts quaters 
 	amount_left= num - (quaters * 25 )
 	dime = amount_left/10
-	puts dime
+	# puts dime
 	amount_left2 = num - (quaters*25+dime*10)
 	nickel = amount_left2/5
-	puts nickel
+	# puts nickel
 	amount_left3 = num - (quaters*25+dime*10+nickel*5)
 	penny = amount_left3/1
-	puts penny
-	array.push(quaters,dime,nickel,penny)
-	
+	# puts penny
+	array.push((quaters*25),(dime*10),(nickel*5),penny)
+	array
+
+	# coins = []
+
+	# while (amount-25) >= 0
+	# 	coins.push(25)
+	# 	amount -=25
+	# end
+
+
+
+
 end
